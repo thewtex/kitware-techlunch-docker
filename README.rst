@@ -9,18 +9,18 @@ Kitware Tech Lunch
 Introduction
 ------------
 
-Docker is new technology that has caught the software industry by storm. It is
-a new type of tool to easily build, ship, and run reproducible, binary applications.
-In this talk, we will introduce Docker from the perspective of a scientific
-research software engineer.
+Docker is a new technology that has caught the software industry by storm.
+Docker is a new type of tool to easily build, ship, and run reproducible,
+binary applications.  In this talk, we will introduce Docker from the
+perspective of a scientific research software engineer.
 
 We will
 
 1) Generate an understanding of what Docker is by comparing it to existing
    technologies.
 2) Give an introduction to basic Docker concepts.
-3) Run through examples that demonstrate when and how it is advantageous to
-   take advange of Docker.
+3) Go through examples that demonstrate when and how it is advantageous to
+   take advange of this tool.
 
 
 Run the Presentation Live, Locally
@@ -33,10 +33,8 @@ Computing with Python`_ at IEEE NSS/MIC 2014.
 Install Docker
 ..............
 
-To install Docker, follow the instructions distributed with the flash drive in
-the `docker/installation` directory. Outside of the conference, the `online
-installation instructions <https://docs.docker.com/installation/>`_ can also
-be followed.
+To install Docker, follow the `online installation instructions
+<https://docs.docker.com/installation/>`_.
 
 Import the Docker Image
 .......................
