@@ -1,4 +1,4 @@
-Docker: An Introduction for Research Software Engineers
+An Introduction Docker for Research Software Engineers
 =======================================================
 Kitware Tech Lunch
 ------------------
