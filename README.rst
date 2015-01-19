@@ -20,7 +20,7 @@ We will
    technologies.
 2) Give an introduction to basic Docker concepts.
 3) Go through examples that demonstrate when and how it is advantageous to
-   take advange of this tool.
+   take advantage of this tool.
 
 
 Run the Presentation Live, Locally
