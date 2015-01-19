@@ -48,7 +48,7 @@ Pull the image from DockerHub_.
   search, push, and pull images from public or private repositories. To
   download the image from DockerHub::
 
-    docker pull thewtex/ieee-nss-mic-scipy-2014
+    docker pull thewtex/kitware-techlunch-docker
 
 Build the image from its sources.
   Docker images are created from a set of instructions that are stored in a
@@ -56,8 +56,8 @@ Build the image from its sources.
   image, like installing packages, compiling dependencies, editing
   configurations, etc.  To build the image::
 
-    git clone https://github.com/thewtex/docker-ieee-nss-mic-scipy-2014
-    cd docker-ieee-nss-mic-scipy-2014
+    git clone https://github.com/thewtex/kitware-techlunch-docker
+    cd kitware-techlunch-docker
     ./build.sh
 
 Run the Docker Image
@@ -65,7 +65,7 @@ Run the Docker Image
 
 To run the IPython notebook server::
 
-  docker run -d --name notebook -p 443:8888 -v $PWD:/notebooks/:rw -e "PASSWORD=MakeAPassword" thewtex/ieee-nss-mic-scipy-2014
+  ./run.sh MakeAPassword
 
 This command should be executed from the directory containing the `*.ipynb`
 notebook files so `$PWD` will make the notebook files available to the docker
@@ -106,15 +106,15 @@ To list the running and stopped containers::
 
 To stop the container::
 
-  docker stop notebook
+  docker stop techlunch
 
 To start the container again::
 
-  docker start notebook
+  docker start techlunch
 
 To remove the container::
 
-  docker rm notebook
+  docker rm techlunch
 
 
 .. _IPython: http://ipython.org/
