@@ -1,5 +1,5 @@
 FROM thewtex/ieee-nss-mic-scipy-2014
-MAINTAINER jerome.petazzoni@docker.com
+MAINTAINER Matt McCormick <matt.mccormick@kitware.com>
 # Derived from https://github.com/jpetazzo/dind
 
 # Let's start with some basic stuff.
@@ -21,4 +21,7 @@ RUN chmod +x /usr/local/bin/wrapdocker
 
 # Define additional metadata for our image.
 VOLUME /var/lib/docker
-#CMD ["wrapdocker"]
+
+ADD docker-notebook.sh /
+RUN chmod u+x /docker-notebook.sh
+CMD ["/docker-notebook.sh"]
