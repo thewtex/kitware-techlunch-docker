@@ -19,7 +19,7 @@ We will
 1) Generate an understanding of what Docker is by comparing it to existing
    technologies.
 2) Give an introduction to basic Docker concepts.
-3) Go through examples that demonstrate when and how it is advantageous to
+3) Go through examples that demonstrate when and how it is beneficial to
    take advantage of this tool.
 
 
