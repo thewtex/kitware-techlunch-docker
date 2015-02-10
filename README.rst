@@ -48,6 +48,15 @@ Pull the image from DockerHub_.
 
     docker pull thewtex/kitware-techlunch-docker
 
+If there are `permission denied` errors, make sure your user is in the
+`docker` group::
+
+    sudo gpasswd --add $(whoami) docker
+    sudo service docker restart
+    newgrp
+
+or see more `instructions for Ubuntu`_.
+
 Build the image from its sources.
   Docker images are created from a set of instructions that are stored in a
   *Dockerfile*. These are the set of commands that are used to set up the
@@ -120,3 +129,4 @@ To remove the container::
 .. _DockerHub: https://hub.docker.com/
 .. _Modern Scientific Computing With Python: https://github.com/thewtex/ieee-nss-mic-scipy-2014
 .. _image: https://github.com/thewtex/docker-ieee-nss-mic-scipy-2014
+.. _instructions for Ubuntu: http://askubuntu.com/questions/477551/how-can-i-use-docker-without-sudo
