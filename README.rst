@@ -70,7 +70,13 @@ Build the image from its sources.
 Run the Docker Image
 ....................
 
-To run the IPython notebook server::
+To run the IPython notebook server, clone the Git repository if you have not
+already done so::
+
+  git clone https://github.com/thewtex/kitware-techlunch-docker
+  cd kitware-techlunch-docker
+
+Then run the `run.sh` script with a password of your choice::
 
   ./run.sh MakeAPassword
 
